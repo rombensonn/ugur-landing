@@ -569,12 +569,39 @@
                         <li>Запись и предварительный расчет доступны по телефону.</li>
                     </ul>
                 </div>
-                <div class="search-panel" aria-hidden="true">
-                    <div class="search-input">Что беспокоит автомобиль?</div>
-                    <label><input type="checkbox" checked> горит ошибка</label>
-                    <label><input type="checkbox" checked> стук в ходовой</label>
-                    <label><input type="checkbox"> рывки коробки</label>
-                    <label><input type="checkbox"> замена ГРМ</label>
+                <div class="diagnostic-panel" aria-label="Как симптомы превращаются в план диагностики">
+                    <div class="diagnostic-panel-head">
+                        <span>Что беспокоит автомобиль?</span>
+                        <strong>От симптома к понятному плану</strong>
+                    </div>
+                    <div class="diagnostic-table">
+                        <div class="diagnostic-row diagnostic-row-head">
+                            <span>Симптом</span>
+                            <span>Что проверяем</span>
+                            <span>Что получаете</span>
+                        </div>
+                                                    <div class="diagnostic-row">
+                                <span>Горит ошибка</span>
+                                <span>Сканер, датчики, питание</span>
+                                <span>Понимаем, что проверять первым</span>
+                            </div>
+                                                    <div class="diagnostic-row">
+                                <span>Стук в ходовой</span>
+                                <span>Подъемник, люфты, тормоза</span>
+                                <span>Показываем изношенный узел</span>
+                            </div>
+                                                    <div class="diagnostic-row">
+                                <span>Рывки коробки</span>
+                                <span>Ошибки, масло, тест-проезд</span>
+                                <span>Отделяем механику от электроники</span>
+                            </div>
+                                                    <div class="diagnostic-row">
+                                <span>Замена ГРМ</span>
+                                <span>Регламент, состояние, доступ</span>
+                                <span>Согласуем объем до начала работ</span>
+                            </div>
+                                            </div>
+                    <a class="diagnostic-panel-link" href="#lead-form">Описать свой симптом</a>
                 </div>
             </div>
         </section>
@@ -660,7 +687,7 @@
                 <form class="lead-form interface-card" action="./lead.php" method="post" novalidate data-lead-form>
                                         <div class="form-alert form-alert-js" hidden role="status"></div>
 
-                    <input type="hidden" name="csrf_token" value="f2093b727281f86a0a4c078750acce5213b2129498f27e5573942bab6612bb4a">
+                    <input type="hidden" name="csrf_token" value="b846277fbd34e2b4d8c4af8d102eaf85b3a8c4ea36be676c450c0a225f407748">
                     <input type="hidden" name="source" value="landing">
                     <label class="honeypot">
                         Не заполняйте это поле
